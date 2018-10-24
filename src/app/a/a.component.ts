@@ -11,18 +11,41 @@ export class AComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      var morphing = anime({
-        targets: '.polymorph',
-        points: [
-          { value: "327.67 49.37 127.67 49.37 27.67 222.58 127.67 395.78 327.67 395.78 427.67 222.58 327.67 49.37" },
-          { value: "248 2.91 18 66.24 0 282.24 180 324.24 301.58 439.19 466 165.58 248 2.91"},
-          { value: "400 49.37 139.73 0 85.33 222.58 124.67 428.91 382.67 368.91 366.67 214.91 400 49.37" },
-          { value: "327.67 49.37 127.67 49.37 27.67 222.58 127.67 395.78 327.67 395.78 427.67 222.58 327.67 49.37" }
-        ],
-        easing: 'easeOutQuad',
-        duration: 2000,
-        loop: true
+
+      
+    var timeLineValues= [
+      [
+        { id:"#polygon0", points:"88.74 151.49 1.74 1.49 175.74 1.49 88.74 151.49"}
+      ],
+      [
+        { id:"#polygon1", points:"262.74 151.99 175.74 1.99 349.74 1.99 262.74 151.99"}
+      ],
+      [
+        { id:"#polygon2", points:"175.74 1.99 262.74 151.99 88.74 151.99 175.74 1.99"}
+      ],
+      [
+        { id:"#polygon3", points:"175.74 301.99 88.74 151.99 262.74 151.99 175.74 301.99"}
+      ]
+      ];
+      
+      
+      var timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: true });
+
+      timeLineValues.forEach(function(polygon, index2){
+      polygon.forEach(function(frame, index){
+      timeline
+      .add({
+      targets:frame.id,
+        points: {
+          value: frame.points,
+          duration: 1000,
+          easing: 'easeInOutSine'
+        },
+          offset: 0 + (75 * index2),
+        });
+        })
       });
+
   }
 
 }
