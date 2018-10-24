@@ -1,11 +1,9 @@
-# Trying out Animejs ans SVG
+# Trying out Animejs and SVG
 
-Angular for page navigation, Adobe Illustrator to draw, Animejs for animation.
+Angular for page navigating, Adobe Illustrator for drawing, Animejs for animating.
+Inspiration: https://codepen.io/ainalem/pen/VWJRav
 
-Inspired/copied from https://codepen.io/ainalem/pen/VWJRav
-
-Now:
-https://duffcon.github.io/AppleOfLife/
+Now: https://duffcon.github.io/AppleOfLife/
 
 Later:
 ```
