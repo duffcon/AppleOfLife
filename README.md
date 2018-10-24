@@ -1,5 +1,7 @@
 # TreeApple
 
+
+Ng new won't work if README or .gitignore exists.
 ```
 git clone _new_github_repo_
 rename .gitignore to .gitignore2
@@ -14,46 +16,12 @@ rename .gitignore2 back to .gitignore
 rename README.md2 back to README.md 
 ```
 
-
-.gitignore
+Check everything works.
 ```
-
-```
-
-
-
-```
+ng serve
 ```
 
 
-
-```
-```
-
-
-
-```
-```
-
-
-
-```
-```
-
-
-
-```
-```
-
-
-
-```
-```
-
-
-
-```
-```
 
 
 
