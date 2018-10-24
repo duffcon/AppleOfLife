@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
 import { CComponent } from './c/c.component';
+import { DComponent } from './d/d.component';
 
 
 const appRoutes: Routes =
@@ -17,7 +18,8 @@ const appRoutes: Routes =
     { path: 'A', component: AComponent },
     { path: 'B', component: BComponent },
     { path: 'C', component: CComponent },
-    { path: '**', component: AComponent }
+    { path: 'D', component: DComponent },
+    { path: '**', component: DComponent }
   ];
 
 @NgModule({
@@ -26,7 +28,8 @@ const appRoutes: Routes =
     NavComponent,
     AComponent,
     BComponent,
-    CComponent
+    CComponent,
+    DComponent
   ],
   imports: [
     BrowserModule,

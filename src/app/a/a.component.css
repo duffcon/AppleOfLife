@@ -1,6 +1,5 @@
-polygon {
-    fill: coral;
-    stroke: #272727;
-    stroke-width: 2px;
+path {
+    fill: rgb(150, 46, 8);
+
     
 }
