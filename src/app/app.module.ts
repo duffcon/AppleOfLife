@@ -11,6 +11,7 @@ import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
 import { CComponent } from './c/c.component';
 import { DComponent } from './d/d.component';
+import { EComponent } from './e/e.component';
 
 
 const appRoutes: Routes =
@@ -19,6 +20,7 @@ const appRoutes: Routes =
     { path: 'B', component: BComponent },
     { path: 'C', component: CComponent },
     { path: 'D', component: DComponent },
+    { path: 'E', component: EComponent },
     { path: '**', component: DComponent }
   ];
 
@@ -29,7 +31,8 @@ const appRoutes: Routes =
     AComponent,
     BComponent,
     CComponent,
-    DComponent
+    DComponent,
+    EComponent
   ],
   imports: [
     BrowserModule,
