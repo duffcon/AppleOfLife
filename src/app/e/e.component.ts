@@ -17,7 +17,7 @@ export class EComponent implements OnInit {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'datboi.json'
+      path: 'assets/datboi.json'
   });
 
 
